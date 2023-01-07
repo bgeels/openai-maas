@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
   name="openai-maas",
-  version="1.0.0",
+  version="1.0.1",
   author="Ben Geels",
   author_email="ben.geels019@gmail.com",
   description="Creates memes leveraging OpenAI API",
@@ -14,7 +14,9 @@ setup(
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3"
   ],
-  include_package_data=True,
+  package_data={ 'openai_maas': [
+    'fonts/*'
+  ]},
   install_requires=[
     "alt-profanity-check==1.1.3",
     "openai==0.26.0",
