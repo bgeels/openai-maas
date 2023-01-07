@@ -1,0 +1,2 @@
+include fonts/*
+recursive-include *.py
